@@ -1,0 +1,20 @@
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .nav-item .nav-link {
+    color: var(--absolute-white);
+    line-height: 0.875rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links .nav-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.nav-links .nav-item .nav-link:hover {
+    color: var(--primary-color);
+}

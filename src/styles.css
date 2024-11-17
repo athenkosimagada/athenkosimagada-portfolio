@@ -1,1 +1,116 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --absolute-white: #FFFFFF;
+    --absolute-black: #000000;
+
+    --light-color-100: #FFFFFF;
+    --light-color-200: #F0F0F0;
+    --light-color-300: #E0E0E0;
+    --light-color-400: #D0D0D0;
+    --light-color-500: #C0C0C0;
+    --light-color-600: #B0B0B0;
+    --light-color-700: #A0A0A0;
+    --light-color-800: #909090;
+    --light-color-900: #808080;
+
+    --dark-color-100: #141414;
+    --dark-color-200: #262626;
+    --dark-color-300: #313131;
+    --dark-color-400: #424242;
+    --dark-color-500: #666666;
+    --dark-color-600: #777777;
+    --dark-color-700: #888888;
+    --dark-color-800: #909092;
+
+    --primary-color: #E50000;
+    --facebook-color: #4267B2;
+    --twitter-color: #1DA1F2;
+    --linkedin-color: #0077B5;
+    --github-color: #24292E;
+
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+/* RESET */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--absolute-white);
+    background-color: var(--dark-color-100);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-poppins);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-wrap: break-word;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* UTILITY CLASSES */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* SCROLLBAR */
+
+/* WebKit-based browsers (Chrome, Safari, newer Edge) */
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+::-webkit-slider-thumb {
+    background-color: var(--primary-color);
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) transparent;
+}
+
+/* Fallback for older browsers */
+*::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

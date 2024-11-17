@@ -1,0 +1,10 @@
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo .logo-img {
+    min-height: 30px;
+    margin-right: 10px;
+}

@@ -1,0 +1,22 @@
+.navbar {
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.navbar.scrolling {
+    background-color: var(--dark-color-100);
+    border-bottom: 1px solid var(--dark-color-200);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 0;
+}

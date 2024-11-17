@@ -1,0 +1,12 @@
+{
+  "heroSlides": [
+    {
+      "id": 1,
+      "service": "Web Development Services",
+      "title": "Dynamic & Responsive Solutions",
+      "buttonText": "Explore My Work",
+      "buttonLink": "/portfolio",
+      "imageUrl": "images/hero/web.png"
+    }
+  ]
+}
