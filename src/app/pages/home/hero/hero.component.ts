@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import  { heroSlides } from '../../../../../public/data/hero.json';
 import { HeroSlideComponent } from '../hero-slide/hero-slide.component';
 import { CommonModule } from '@angular/common';
-
+import { register } from 'swiper/element/bundle';
 @Component({
   selector: 'app-hero',
   standalone: true,
@@ -11,8 +11,13 @@ import { CommonModule } from '@angular/common';
     HeroSlideComponent
   ],
   templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css'
+  styleUrls: ['./hero.component.css'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class HeroComponent {
-  heroSlides: any = heroSlides
+  heroSlides: any[] = heroSlides
+
+  constructor() {
+    register();
+  }
 }

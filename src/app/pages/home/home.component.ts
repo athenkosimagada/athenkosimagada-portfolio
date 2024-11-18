@@ -8,7 +8,7 @@ import { HeroComponent } from './hero/hero.component';
     HeroComponent
   ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
 

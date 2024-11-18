@@ -1,3 +1,17 @@
 <div class="hero">
-    <app-hero-slide *ngFor="let slide of heroSlides" [slide]="slide" />
+  <swiper-container
+    class="hero-swiper"
+    pagination="true"
+    pagination-clickable="true"
+    space-between="30"
+    centered-slides="true"
+    autoplay-delay="6000"
+    autoplay-disable-on-interaction="false"
+  >
+    @for (slide of heroSlides; track $index) {
+      <swiper-slide>
+        <app-hero-slide [slide]="slide"></app-hero-slide>
+      </swiper-slide>
+    }
+  </swiper-container>
 </div>

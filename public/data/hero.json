@@ -7,6 +7,22 @@
       "buttonText": "Explore My Work",
       "buttonLink": "/portfolio",
       "imageUrl": "images/hero/web.png"
+    },
+    {
+      "id": 2,
+      "service": "UI/UX Design Services",
+      "title": "The Evolution of Digital Innovation",
+      "buttonText": "WORK WITH ME",
+      "buttonLink": "/contact",
+      "imageUrl": "images/hero/figma.png"
+    },
+    {
+      "id": 3,
+      "service": "Full-Stack Development ",
+      "title": "Comprehensive Solutions",
+      "buttonText": "GET IN TOUCH",
+      "buttonLink": "/contact",
+      "imageUrl": "images/hero/fullstack.png"
     }
   ]
 }

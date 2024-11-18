@@ -1,5 +1,11 @@
-<div class="slide">
-  <img [src]="slide.imageUrl" alt="Slide Image" />
-  <h2>{{ slide.title }}</h2>
-  <p>{{ slide.description }}</p>
+<div class="hero-slide">
+  <div class="overlay"></div>
+  <img class="hero-slide-image" [src]="slide.imageUrl" alt="hero slide image" />
+  <div class="hero-slide-content">
+    <h3 class="hero-slide-service">{{ slide.service.toUpperCase() }}</h3>
+    <h1 class="hero-slide-title">{{ slide.title }}</h1>
+    <a class="hero-slide-button" routerLink="{{ slide.buttonLink }}">{{
+      slide.buttonText.toUpperCase()
+    }}</a>
+  </div>
 </div>
