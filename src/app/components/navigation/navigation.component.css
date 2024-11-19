@@ -20,3 +20,23 @@
 
     padding: 1rem 0;
 }
+
+.navbar .container app-menu {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .container app-menu {
+        display: block;
+    }
+
+    .navbar .container app-social-links {
+        display: none;
+    }
+
+    
+    .navbar .container app-nav-links {
+        display: none;
+    }
+    
+}
