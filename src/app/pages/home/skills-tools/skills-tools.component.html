@@ -1,0 +1,13 @@
+<section class="skills-tools">
+  <div class="skills-marquee">
+    @for (skillTool of skillsTools; track $index) {
+      <app-skill-tool [skillTool]="skillTool"></app-skill-tool>
+    }
+  </div>
+
+  <div class="skills-marquee" aria-hidden="true">
+    @for (skillTool of skillsTools; track $index) {
+      <app-skill-tool [skillTool]="skillTool"></app-skill-tool>
+    }
+  </div>
+</section>

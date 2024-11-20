@@ -1,0 +1,30 @@
+.skills-tools {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-block: 1rem;
+    background-color: var(--dark-color-200);
+    overflow: hidden;
+    user-select: none;
+    --gap: 8rem;
+    gap: var(--gap);
+}
+
+.skills-tools:hover .skills-marquee {
+    animation-play-state: paused;
+}
+
+.skills-tools .skills-marquee {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap);
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
