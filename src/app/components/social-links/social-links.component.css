@@ -10,6 +10,29 @@
     transition: scale 0.3s ease;
 }
 
+.socials-links  .socials-link.original {
+    border-radius: 4px;
+    height: 32px;
+    width: 53px;
+    color: var(--absolute-white);
+    box-shadow: 0 0 2px 0 var(--dark-color-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials-links  .socials-link.github {
+    background-color: #262626;
+}
+
+.socials-links  .socials-link.twitter {
+    background-color: #262626;
+}
+
+.socials-links  .socials-link.linkedin {
+    background-color: #2A9DF1;
+}
+
 .socials-links  .socials-link:hover {
     scale: 1.2;
 }

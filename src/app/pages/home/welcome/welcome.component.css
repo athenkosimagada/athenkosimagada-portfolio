@@ -1,0 +1,13 @@
+.welcome {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 740px;
+    margin: 0 auto;
+}
+
+.welcome :last-child {
+    padding-top: 1rem;
+}

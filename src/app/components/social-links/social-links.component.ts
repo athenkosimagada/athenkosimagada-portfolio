@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -8,8 +8,8 @@ import { RouterLink } from '@angular/router';
     RouterLink
   ],
   templateUrl: './social-links.component.html',
-  styleUrl: './social-links.component.css'
+  styleUrls: ['./social-links.component.css']
 })
 export class SocialLinksComponent {
-
+  @Input() isOriginal: boolean = false
 }
