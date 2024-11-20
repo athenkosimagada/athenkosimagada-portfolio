@@ -1,0 +1,10 @@
+.skill-tool {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-tool img {
+    width: 48px;
+    height: 48px;
+}

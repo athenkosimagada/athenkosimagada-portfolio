@@ -1,0 +1,74 @@
+{
+  "skillsTools": [
+    {
+      "id": 1,
+      "name": "Angular",
+      "imageUrl": "icons/angular.svg"
+    },
+    {
+      "id": 2,
+      "name": "CSS",
+      "imageUrl": "icons/css.svg"
+    },
+    {
+      "id": 3,
+      "name": "Git",
+      "imageUrl": "icons/git.svg"
+    },
+    {
+      "id": 4,
+      "name": "JavaScript",
+      "imageUrl": "icons/js.svg"
+    },
+    {
+      "id": 5,
+      "name": "Node.js",
+      "imageUrl": "icons/nodejs.svg"
+    },
+    {
+      "id": 6,
+      "name": "Tailwind",
+      "imageUrl": "icons/tailwind.svg"
+    },
+    {
+      "id": 7,
+      "name": "TypeScript",
+      "imageUrl": "icons/ts.svg"
+    },
+    {
+      "id": 8,
+      "name": "Figma",
+      "imageUrl": "icons/figma.svg"
+    },
+    {
+      "id": 9,
+      "name": "Postgres",
+      "imageUrl": "icons/postgres.svg"
+    },
+    {
+      "id": 10,
+      "name": "sql",
+      "imageUrl": "icons/sql.svg"
+    },
+    {
+      "id": 11,
+      "name": "C#",
+      "imageUrl": "icons/csharp.svg"
+    },
+    {
+      "id": 12,
+      "name": "express",
+      "imageUrl": "icons/express.svg"
+    },
+    {
+      "id": 13,
+      "name": "github",
+      "imageUrl": "icons/github.svg"
+    },
+    {
+      "id": 14,
+      "name": "Socket.io",
+      "imageUrl": "icons/socket.svg"
+    }
+  ]
+}
