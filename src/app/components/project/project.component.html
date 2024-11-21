@@ -1,4 +1,4 @@
-<div class="project">
+<div class="project {{ project.id % 2 === 1 ? '' : 'even' }}">
   <img class="project-image" src="{{ project.imageUrl }}" alt="{{ project.title }}" />
   <div class="content">
     <h3>{{ project.title }}</h3>

@@ -2,7 +2,7 @@
   "projects": [
     {
       "id": 1,
-      "imageUrl": "images/projects/project.png",
+      "imageUrl": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fHwy",
       "title": "Project Name 1",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
       "githubLink": "https://github.com/username/project1",
@@ -20,7 +20,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "images/projects/project.png",
+      "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "title": "Project Name 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
       "githubLink": "https://github.com/username/project1",

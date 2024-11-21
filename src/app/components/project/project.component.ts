@@ -5,7 +5,7 @@ import { SectionParagraphComponent } from "../section-paragraph/section-paragrap
 @Component({
   selector: 'app-project',
   standalone: true,
-  imports: [SectionHeadingComponent, SectionParagraphComponent],
+  imports: [SectionParagraphComponent],
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.css']
 })
