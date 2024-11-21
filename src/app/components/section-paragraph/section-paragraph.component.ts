@@ -5,8 +5,9 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './section-paragraph.component.html',
-  styleUrl: './section-paragraph.component.css'
+  styleUrls: ['./section-paragraph.component.css']
 })
 export class SectionParagraphComponent {
-  @Input() paragraph: string = ''
+  @Input() paragraph: string = '';
+  @Input() center: boolean = false;
 }
