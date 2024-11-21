@@ -1,5 +1,6 @@
 <div class="projects-list">
-    @for (project of projects; track $index) {
-        <app-project [project]="project" />
-    }
+  @for (project of projects; track $index) {
+    <app-project [project]="project" />
+  }
+  <app-load-button text="View More" />
 </div>
