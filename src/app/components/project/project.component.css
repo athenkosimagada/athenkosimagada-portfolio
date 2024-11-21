@@ -1,0 +1,51 @@
+.project {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 0 var(--dark-color-800);
+}
+
+.project .project-image {
+    aspect-ratio: 16/12;
+    max-width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.project .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.project .content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.project .content .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.project .content .tags .tag {
+    background-color: var(--dark-color-300);
+    padding: 0.5rem 1.5rem;
+    border-radius: 60px;
+}
+
+.project .content .links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project .content .links > * {
+    scale: 1;
+    transition: scale 0.3s ease;
+}
+
+.project .content .links > *:hover {
+    scale: 1.2;
+}
