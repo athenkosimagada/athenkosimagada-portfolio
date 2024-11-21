@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { SectionHeadingComponent } from "../section-heading/section-heading.component";
 import { SectionParagraphComponent } from "../section-paragraph/section-paragraph.component";
 
 @Component({
