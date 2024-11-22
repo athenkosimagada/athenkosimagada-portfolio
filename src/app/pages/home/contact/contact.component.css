@@ -1,3 +1,46 @@
 .contact {
-    padding-top: 100px;
+    margin-top: 100px;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow: 0 0 2px 0 var(--dark-color-800);
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000055;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+.contact .contact-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.contact-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-heading {
+    font-size: 2rem;
+    font-weight: 600;
 }
