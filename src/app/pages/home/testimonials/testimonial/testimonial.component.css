@@ -6,8 +6,7 @@
     gap: 1rem;
     padding: 1rem;
     border-radius: 8px;
-    box-shadow: 0 0 2px 0 var(--dark-color-800);
-    margin: 0.5rem;
+    
 }
 
 .testimonial .quotes {
