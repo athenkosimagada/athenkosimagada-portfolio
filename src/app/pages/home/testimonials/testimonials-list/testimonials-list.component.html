@@ -1,0 +1,15 @@
+<div class="testimonials-list">
+  <swiper-container
+    class="testimonials-swiper"
+    loop="true"
+    slides-per-view="3"
+    autoplay-delay="6000"
+    autoplay-disable-on-interaction="false"
+  >
+    @for (testimonial of testimonials; track $index) {
+      <swiper-slide>
+        <app-testimonial [testimonial]="testimonial" />
+      </swiper-slide>
+    }
+  </swiper-container>
+</div>

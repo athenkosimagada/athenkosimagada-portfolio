@@ -1,0 +1,14 @@
+import { Component } from '@angular/core';
+import { SectionParagraphComponent } from "../../../components/section-paragraph/section-paragraph.component";
+import { TestimonialsListComponent } from "./testimonials-list/testimonials-list.component";
+
+@Component({
+  selector: 'app-testimonials',
+  standalone: true,
+  imports: [SectionParagraphComponent, TestimonialsListComponent],
+  templateUrl: './testimonials.component.html',
+  styleUrls: ['./testimonials.component.css']
+})
+export class TestimonialsComponent {
+  
+}

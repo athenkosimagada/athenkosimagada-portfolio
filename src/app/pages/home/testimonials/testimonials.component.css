@@ -1,0 +1,38 @@
+.testimonials {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.testimonials-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 350px;
+}
+
+.testimonials-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.testimonials-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    overflow: hidden;
+}  
+
+.testimonials-body img {
+    max-width: 300px;
+    object-fit: contain;
+}
+
+app-testimonials-list {
+    width: 85%;
+}

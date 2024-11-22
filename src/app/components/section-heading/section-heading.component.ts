@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './section-heading.component.html',
-  styleUrl: './section-heading.component.css'
+  styleUrls: ['./section-heading.component.css']
 })
 export class SectionHeadingComponent {
   @Input() heading: string = '';
