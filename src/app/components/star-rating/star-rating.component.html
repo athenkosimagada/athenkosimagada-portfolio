@@ -1,0 +1,5 @@
+<div class="star-rating">
+  @for (star of stars; track $index) {
+    <i class="star" [class.filled]="$index <= rating" aria-hidden="true">★</i>
+  }
+</div>

@@ -1,0 +1,12 @@
+.star-rating {
+    color: var(--primary-color);
+}
+
+.star-rating .star {
+    font-size: 1.5rem;
+    color: var(--dark-color-500);
+}
+
+.star-rating .star.filled {
+    color: var(--primary-color);
+}
