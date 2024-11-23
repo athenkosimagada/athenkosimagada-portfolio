@@ -54,3 +54,31 @@
 .project .content .links > *:hover {
     scale: 1.2;
 }
+
+@media screen and (max-width: 900px) {
+    .project {
+       flex-direction: column;
+    }    
+
+    .project.even {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .project .project-image {
+        aspect-ratio: 16/12;
+    }
+
+    .project .content {
+        text-align: center;
+    }
+
+    .project .content .tags {
+        justify-content: center;
+    }
+
+    .project .content .links {
+        justify-content: center;
+    }
+}
