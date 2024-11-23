@@ -4,8 +4,6 @@
   <div class="hero-slide-content">
     <h3 class="hero-slide-service">{{ slide.service.toUpperCase() }}</h3>
     <h1 class="hero-slide-title">{{ slide.title }}</h1>
-    <a class="hero-slide-button" routerLink="{{ slide.buttonLink }}">{{
-      slide.buttonText.toUpperCase()
-    }}</a>
+    <app-button type="secondary" [text]="slide.buttonText.toUpperCase()" [routerLink]="slide.buttonLink" />
   </div>
 </div>

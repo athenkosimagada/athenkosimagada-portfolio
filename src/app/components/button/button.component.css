@@ -28,5 +28,5 @@
 
 .button.secondary:hover {
     background-color: var(--absolute-white);
-    color: var(--primary-color);
+    color: var(--absolute-black);
 }

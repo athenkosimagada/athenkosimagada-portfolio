@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { ButtonComponent } from "../../../components/button/button.component";
 
 @Component({
   selector: 'app-hero-slide',
   standalone: true,
   imports: [
-    RouterLink
-  ],
+    RouterLink,
+    ButtonComponent
+],
   templateUrl: './hero-slide.component.html',
   styleUrl: './hero-slide.component.css',
 })

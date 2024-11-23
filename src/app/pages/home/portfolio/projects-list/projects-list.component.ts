@@ -1,11 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { ProjectComponent } from "../../../../components/project/project.component";
-import { LoadButtonComponent } from "../../../../components/load-button/load-button.component";
+import { ButtonComponent } from "../../../../components/button/button.component";
 
 @Component({
   selector: 'app-projects-list',
   standalone: true,
-  imports: [ProjectComponent, LoadButtonComponent],
+  imports: [ProjectComponent, ButtonComponent],
   templateUrl: './projects-list.component.html',
   styleUrls: ['./projects-list.component.css']
 })
