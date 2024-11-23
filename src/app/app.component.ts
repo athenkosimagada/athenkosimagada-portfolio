@@ -4,6 +4,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
 import { register } from 'swiper/element/bundle';
+import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 register();
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ register();
     CommonModule,
     RouterOutlet,
     NavigationComponent,
-    FooterComponent
+    FooterComponent,
+    ContactSectionComponent
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
