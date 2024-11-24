@@ -10,7 +10,7 @@ import { ButtonComponent } from "../../../components/button/button.component";
     ButtonComponent
 ],
   templateUrl: './hero-slide.component.html',
-  styleUrl: './hero-slide.component.css',
+  styleUrls: ['./hero-slide.component.css'],
 })
 export class HeroSlideComponent {
   @Input() slide: any
