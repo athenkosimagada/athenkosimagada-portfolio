@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
 import { register } from 'swiper/element/bundle';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
-import { Analytics } from "@vercel/analytics/react";
 
 register();
 @Component({
