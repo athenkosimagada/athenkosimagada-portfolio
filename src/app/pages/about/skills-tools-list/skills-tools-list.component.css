@@ -1,0 +1,14 @@
+.skills-tools-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill-tool {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    background-color: var(--dark-color-100);
+    box-shadow: 0 0 2px 0 var(--dark-color-400);
+}
