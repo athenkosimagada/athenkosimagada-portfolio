@@ -43,3 +43,24 @@
     flex-direction: column;
     gap: 1rem;
 }
+
+@media screen and (max-width: 900px) {
+    .about-me-section { 
+        flex-direction: column;
+    }
+
+    .about-me-section .about-me-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-me-section .about-me-image img {
+        border-radius: 8px;
+        max-width: 300px;
+    }
+    
+    .about-me-section .about-me-content {
+        text-align: center;
+    }
+}

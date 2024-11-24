@@ -1,6 +1,7 @@
 .hero-section {
     height: 320px;
     position: relative;
+    text-align: center;
 }
 
 .hero-section::after {
