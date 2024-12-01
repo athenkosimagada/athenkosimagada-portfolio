@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
+import { HeroSectionComponent } from "../../components/hero-section/hero-section.component";
+import { ProjectsListComponent } from "../home/portfolio/projects-list/projects-list.component";
+import { projects } from "../../../../public/data/projects.json";
+import { HeroComponent } from "../home/hero/hero.component";
+import { SectionHeaderComponent } from "../../components/section-header/section-header.component";
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [],
+  imports: [HeroSectionComponent, ProjectsListComponent, HeroComponent, SectionHeaderComponent],
   templateUrl: './projects.component.html',
-  styleUrl: './projects.component.css'
+  styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-
+  projects: any[] = projects
 }
