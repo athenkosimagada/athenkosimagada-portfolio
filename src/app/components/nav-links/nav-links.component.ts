@@ -8,8 +8,12 @@ import { RouterLink } from '@angular/router';
     RouterLink
   ],
   templateUrl: './nav-links.component.html',
-  styleUrl: './nav-links.component.css'
+  styleUrls: ['./nav-links.component.css']
 })
 export class NavLinksComponent {
   @Input() column: boolean = false;
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }

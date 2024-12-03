@@ -1,0 +1,12 @@
+<form class="contact-form" (ngSubmit)="onSubmit()">
+    <div class="contact-input">
+        <input type="text" name="fullName" placeholder="Your Full Name"  required />
+    </div>
+    <div class="contact-input">
+        <input type="email" placeholder="Your Email" name="email" required />
+    </div>
+    <div class="contact-input">
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    </div>
+    <app-button text="Send Message" type="secondary" /> 
+</form>

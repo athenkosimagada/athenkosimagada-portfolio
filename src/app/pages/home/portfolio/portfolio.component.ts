@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SectionHeaderComponent } from '../../../components/section-header/section-header.component';
-import { ProjectsListComponent } from "./projects-list/projects-list.component";
+import { ProjectsListComponent } from "../../../components/projects-list/projects-list.component";
 import { projects } from "../../../../../public/data/projects.json";
 import { ButtonComponent } from "../../../components/button/button.component";
 

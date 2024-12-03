@@ -1,10 +1,18 @@
 <ul class="nav-links" [class.column]="column">
-  <li class="nav-item"><a class="nav-link" routerLink="/home">HOME</a></li>
-  <li class="nav-item"><a class="nav-link" routerLink="/about">ABOUT</a></li>
   <li class="nav-item">
-    <a class="nav-link" routerLink="/portfolio">PORTFOLIO</a>
+    <a class="nav-link" (click)="scrollToTop()" routerLink="/home">HOME</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" routerLink="/contact">CONTACT</a>
+    <a class="nav-link" (click)="scrollToTop()" routerLink="/about">ABOUT</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="scrollToTop()" routerLink="/portfolio"
+      >PORTFOLIO</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" (click)="scrollToTop()" routerLink="/contact"
+      >CONTACT</a
+    >
   </li>
 </ul>

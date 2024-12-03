@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeroSectionComponent } from "../../components/hero-section/hero-section.component";
-import { ProjectsListComponent } from "../home/portfolio/projects-list/projects-list.component";
+import { ProjectsListComponent } from "../../components/projects-list/projects-list.component";
 import { projects } from "../../../../public/data/projects.json";
 import { HeroComponent } from "../home/hero/hero.component";
 import { SectionHeaderComponent } from "../../components/section-header/section-header.component";

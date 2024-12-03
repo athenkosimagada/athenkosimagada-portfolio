@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProjectComponent } from "../../../../components/project/project.component";
+import { ProjectComponent } from "../project/project.component";
 
 @Component({
   selector: 'app-projects-list',
