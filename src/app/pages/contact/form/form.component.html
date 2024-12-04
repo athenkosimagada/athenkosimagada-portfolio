@@ -1,12 +1,48 @@
-<form class="contact-form" (ngSubmit)="onSubmit()">
-    <div class="contact-input">
-        <input type="text" name="fullName" placeholder="Your Full Name"  required />
-    </div>
-    <div class="contact-input">
-        <input type="email" placeholder="Your Email" name="email" required />
-    </div>
-    <div class="contact-input">
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    </div>
-    <app-button text="Send Message" type="secondary" /> 
+<form class="contact-form" [formGroup]="form" (ngSubmit)="onFormSubmit()">
+  <div class="contact-input">
+    <input
+      type="text"
+      formControlName="fullName"
+      placeholder="Your Full Name"
+    />
+    @if (
+      form.controls["fullName"].errors &&
+      form.controls["fullName"].errors["required"] &&
+      form.controls["fullName"].touched
+    ) {
+      <span class="error">Email is required</span>
+    }
+  </div>
+  <div class="contact-input">
+    <input type="email" placeholder="Your Email" formControlName="email" />
+    @if (
+      form.controls["email"].errors &&
+      form.controls["email"].errors["email"] &&
+      form.controls["email"].touched
+    ) {
+      <span class="error">Email is invalid!</span>
+    }
+    @if (
+      form.controls["email"].errors &&
+      form.controls["email"].errors["required"] &&
+      form.controls["email"].touched
+    ) {
+      <span class="error">Email is required</span>
+    }
+  </div>
+  <div class="contact-input">
+    <textarea
+      formControlName="message"
+      placeholder="Your Message"
+      rows="5"
+    ></textarea>
+    @if (
+      form.controls["message"].errors &&
+      form.controls["message"].errors["required"] &&
+      form.controls["message"].touched
+    ) {
+      <span class="error">Email is required</span>
+    }
+  </div>
+  <button class="btn" type="submit">Send Message</button>
 </form>

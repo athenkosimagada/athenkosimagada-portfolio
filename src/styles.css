@@ -69,6 +69,12 @@ img {
     max-width: 100%;
 }
 
+/* OVERWRITE DEFAULT STYLES */
+
+.toast-top-right {
+    z-index: 20000 !important;
+}
+
 /* UTILITY CLASSES */
 
 .container {
