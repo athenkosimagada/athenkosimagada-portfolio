@@ -51,13 +51,20 @@ export class FormComponent implements OnInit {
       this.form.markAllAsTouched();
       return;
     }
+    
+    const emailjsPublicKey = environment.EMAILJS_PUBLIC_KEY;
+    const emailjsServiceId = environment.EMAILJS_SERVICE_ID;
+    const emailjsTemplateId = environment.EMAILJS_TEMPLATE_ID;
 
-
+    if (!emailjsServiceId || !emailjsTemplateId) {
+      console.error('EmailJS service ID or template ID is missing');
+      return;
+    }
     emailjs.send(
-      environment.EMAILJS_SERVICE_ID,
-      environment.EMAILJS_TEMPLATE_ID, 
+      emailjsServiceId,
+      emailjsTemplateId, 
       this.form.value, 
-      environment.EMAILJS_PUBLIC_KEY
+      emailjsPublicKey
     )
     .then(() => {
       this.toastr.success('Your message has been sent successfully');
