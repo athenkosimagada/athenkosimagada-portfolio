@@ -4,7 +4,7 @@ import { ToastrService } from 'ngx-toastr';
 import { CommonModule } from '@angular/common';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 
-import { environment } from '../../../../environments/environment';
+import { environment } from '../../../../environments/environment.development';
 
 @Component({
   selector: 'app-form',
