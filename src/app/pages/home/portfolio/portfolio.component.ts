@@ -17,4 +17,8 @@ import { ButtonComponent } from "../../../components/button/button.component";
 })
 export class PortfolioComponent {
   projects: any[] = projects;
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
 }
