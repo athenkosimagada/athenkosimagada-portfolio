@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, EventEmitter, Output } from '@angular/core';
 import { SocialLinksComponent } from "../social-links/social-links.component";
 import { ButtonComponent } from "../button/button.component";
 import { SectionParagraphComponent } from '../section-paragraph/section-paragraph.component';
@@ -10,6 +10,10 @@ import { SectionParagraphComponent } from '../section-paragraph/section-paragrap
   templateUrl: './contact-section.component.html',
   styleUrls: ['./contact-section.component.css']
 })
-export class ContactSectionComponent {
+export class ContactSectionComponent implements AfterViewInit {
+  @Output() contentRendered = new EventEmitter<boolean>();
 
+  ngAfterViewInit() {
+    this.contentRendered.emit(true);
+  }
 }
