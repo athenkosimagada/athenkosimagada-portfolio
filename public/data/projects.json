@@ -3,17 +3,17 @@
     {
       "id": 1,
       "imageUrl": "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvfGVufDB8fDB8fHwy",
-      "title": "Project Name 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-      "githubLink": "https://github.com/username/project1",
-      "liveLink": "https://project1.com",
+      "title": "Mbali Civil & Construction Website",
+      "description": "The Mbali Civil & Construction website displays services, projects, and client feedback, making it easy to browse and seek quotations.",
+      "githubLink": "https://github.com/athenkosimagada/mbali-civil-and-construction",
+      "liveLink": "https://mbalicivilandconstruction.vercel.app/",
       "tags": [
-        "Angular",
+        "React",
         "TypeScript",
-        "HTML",
         "CSS",
+        "JavaScript",
+        "HTML",
         "Figma",
-        "UI/UX",
         "Git",
         "GitHub"
       ]
@@ -21,17 +21,17 @@
     {
       "id": 2,
       "imageUrl": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "title": "Project Name 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-      "githubLink": "https://github.com/username/project1",
-      "liveLink": "https://project1.com",
+      "title": "Real-Time Chat Application",
+      "description": "SignalR powers this seamless real-time chat application, which includes instant messaging, secure authentication, and real-time updates.",
+      "githubLink": "https://github.com/athenkosimagada/SignalR-Application",
+      "liveLink": "https://github.com/athenkosimagada/SignalR-Application",
       "tags": [
         "Angular",
+        ".NET Core",
+        "SignalR",
         "TypeScript",
         "HTML",
         "CSS",
-        "Figma",
-        "UI/UX",
         "Git",
         "GitHub"
       ]
@@ -39,10 +39,10 @@
     {
       "id": 3,
       "imageUrl": "images/projects/project.png",
-      "title": "Project Name 3",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
-      "githubLink": "https://github.com/username/project1",
-      "liveLink": "https://project1.com",
+      "title": "TO DO LIST",
+      "description": "A simple and interactive To-Do List software for managing everyday activities. Vanilla JavaScript, HTML, CSS, and LocalStorage were used to provide persistence.",
+      "githubLink": "https://github.com/athenkosimagada/Task-3",
+      "liveLink": "https://athenkosimagada.github.io/Task-3/",
       "tags": [
         "Angular",
         "TypeScript",
