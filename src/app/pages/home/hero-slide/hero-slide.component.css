@@ -1,18 +1,11 @@
-.hero-slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
 .hero-slide .hero-slide-image {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: -2;
 }
 
 .overlay {
@@ -22,7 +15,7 @@
     width: 100%;
     height: 100%;
     background-color: #0000007d;
-    z-index: 0;
+    z-index: -1;
 }
 
 .hero-slide .hero-slide-content {

@@ -3,9 +3,30 @@
     {
       "id": 1,
       "rating": 5,
-      "name": "Nikho Mbali",
-      "imageUrl": "https://scontent.fdur1-1.fna.fbcdn.net/v/t39.30808-1/374175683_6413770358732562_8905452393282144498_n.jpg?stp=c234.0.491.491a_dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=50d2ac&_nc_eui2=AeExvRYcaimxaTQZjTiVuvbFba8jfiBx9CBtryN-IHH0IOkWB7r6_4RczujcJTWiTznnAx2edZZTvduwTwEZ00wC&_nc_ohc=ip0zSY3Pr54Q7kNvgEAKPUn&_nc_zt=24&_nc_ht=scontent.fdur1-1.fna&_nc_gid=AAdHkXlfpaZFGugZQmbpffZ&oh=00_AYCtc71dEiL1totjYaBBJUz3VqYZN1hfOPlb1v2eIHkBog&oe=675C7895",
-      "comment": "The service I got from Athenkosi was outstanding! He was able to create a website that perfectly met my needs, and I couldn't be happier with the result. Highly recommended!"
+      "name": "Angelina Jolie",
+      "imageUrl": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHwy",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    },
+    {
+      "id": 2,
+      "rating": 4,
+      "name": "Hugo Nienow",
+      "imageUrl": "https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dXNlciUyMHByb2ZpbGV8ZW58MHx8MHx8fDI%3D",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    },
+    {
+      "id": 3,
+      "rating": 3,
+      "name": "James Bradley",
+      "imageUrl": "https://images.unsplash.com/photo-1463453091185-61582044d556?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHwy",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    },
+    {
+      "id": 4,
+      "rating": 2,
+      "name": "Merry Quigley",
+      "imageUrl": "https://images.unsplash.com/photo-1520295187453-cd239786490c?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHwy",
+      "comment": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
     }
   ]
 }
