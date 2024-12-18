@@ -3,10 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from "./components/footer/footer.component";
-import { register } from 'swiper/element/bundle';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 
-register();
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,7 +17,6 @@ register();
 ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppComponent {
   title = 'Portfolio';
