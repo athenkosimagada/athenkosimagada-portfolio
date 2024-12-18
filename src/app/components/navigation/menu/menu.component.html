@@ -16,7 +16,7 @@
 
   <div class="menu-popup" [class.show]="isShow">
     <app-close-button (linkClicked)="handleMenuClick(false)" />
-    <app-nav-links [column]="true" />
+    <app-nav-links [column]="true" (linkClicked)="handleMenuClick(false)" />
     <app-social-links />
   </div>
 </div>

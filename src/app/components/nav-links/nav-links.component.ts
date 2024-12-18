@@ -1,5 +1,5 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, Inject, Input, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, EventEmitter, Inject, Input, OnDestroy, OnInit, Output, PLATFORM_ID } from '@angular/core';
 import { NavigationEnd, NavigationError, NavigationStart, Router, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -12,6 +12,8 @@ import { Subscription } from 'rxjs';
 })
 export class NavLinksComponent implements OnInit, OnDestroy {
   @Input() column: boolean = false;
+  @Output() linkClicked = new EventEmitter<boolean>();
+  
   private routerSubscription: Subscription = new Subscription();
   private visitedUrls: Set<string> = new Set();
 
@@ -21,7 +23,7 @@ export class NavLinksComponent implements OnInit, OnDestroy {
     if(this.visitedUrls.size === 0) {
       this.visitedUrls.add(this.router.url);
     }
-    
+
     this.routerSubscription = this.router.events.subscribe((event) => {
       if (event instanceof NavigationStart && !this.visitedUrls.has(event.url)) {
         this.visitedUrls.add(event.url);
@@ -42,6 +44,7 @@ export class NavLinksComponent implements OnInit, OnDestroy {
   }
 
   onMenuClick(route: string) {
+    this.linkClicked.emit(false);
     this.router.navigate([route]);
   }
 
