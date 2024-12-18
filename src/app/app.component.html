@@ -1,8 +1,6 @@
 <ngx-spinner />
 
-@if (!isLoading) {
-    <app-navigation />
-    <router-outlet />
-    <app-contact-section />
-    <app-footer />
-}
+<app-navigation />
+<router-outlet (activate)="onActivate($event)" />
+<app-contact-section (contentRendered)="onContentRendered()" />
+<app-footer />
