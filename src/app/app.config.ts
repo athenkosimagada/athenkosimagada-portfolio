@@ -15,6 +15,7 @@ export const appConfig: ApplicationConfig = {
       positionClass: 'toast-top-right',
       preventDuplicates: true,
     }),
-    provideClientHydration(), provideAnimationsAsync(), provideAnimationsAsync()
+    provideClientHydration(), 
+    provideAnimationsAsync()
   ]
 };

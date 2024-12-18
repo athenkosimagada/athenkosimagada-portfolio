@@ -10,6 +10,7 @@
 }
 
 .nav-links .nav-item .nav-link {
+    cursor: pointer;
     color: var(--absolute-white);
     line-height: 0.875rem;
     font-size: 0.875rem;

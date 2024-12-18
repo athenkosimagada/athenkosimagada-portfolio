@@ -11,5 +11,13 @@ registerSwiperElements();
 injectSpeedInsights();
 inject();
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+setTimeout(() => {
+  bootstrapApplication(AppComponent, appConfig)
+    .then(() => {
+      const loadingElement = document.querySelector('.loading') as HTMLElement;
+      if (loadingElement) {
+        loadingElement.style.display = 'none';
+      }
+    })
+    .catch((err) => console.error(err));
+}, 3000);

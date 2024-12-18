@@ -1,18 +1,15 @@
 <ul class="nav-links" [class.column]="column">
   <li class="nav-item">
-    <a class="nav-link" (click)="scrollToTop()" routerLink="/home">HOME</a>
+    <a class="nav-link" (click)="onMenuClick('/home')">HOME</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" (click)="scrollToTop()" routerLink="/about">ABOUT</a>
+    <a class="nav-link" (click)="onMenuClick('/about')">ABOUT</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" (click)="scrollToTop()" routerLink="/portfolio"
-      >PORTFOLIO</a
-    >
+    <a class="nav-link" (click)="onMenuClick('/portfolio')">PORTFOLIO</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" (click)="scrollToTop()" routerLink="/contact"
-      >CONTACT</a
-    >
+    <a class="nav-link" (click)="onMenuClick('/contact')">CONTACT</a>
   </li>
 </ul>
+
