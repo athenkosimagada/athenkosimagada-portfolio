@@ -25,6 +25,7 @@ export class NavLinksComponent implements OnInit, OnDestroy {
     }
 
     this.routerSubscription = this.router.events.subscribe((event) => {
+      this.scrollToTop();
       if (event instanceof NavigationStart && !this.visitedUrls.has(event.url)) {
         this.visitedUrls.add(event.url);
         this.showLoader();
@@ -33,8 +34,7 @@ export class NavLinksComponent implements OnInit, OnDestroy {
       if (event instanceof NavigationEnd || event instanceof NavigationError) {
         setTimeout(() => {
           this.hideLoader();
-          this.scrollToTop();
-        }, 1000);
+        }, 100);
       }
     });
   }
