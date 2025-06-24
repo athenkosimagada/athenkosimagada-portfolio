@@ -9,13 +9,13 @@
     {
       "id": 2,
       "title": "UI/UX Design",
-      "iconUrl": "icons/1.svg",
+      "iconUrl": "icons/2.svg",
       "description": "Creating visually stunning and intuitive interfaces that are easy to navigate and user-friendly. "
     },
     {
       "id": 3,
       "title": "Full-Stack Development",
-      "iconUrl": "icons/1.svg",
+      "iconUrl": "icons/3.svg",
       "description": "Building dynamic and interactive web apps that are both functional and visually appealing."
     }
   ]

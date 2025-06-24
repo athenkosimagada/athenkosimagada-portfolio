@@ -18,6 +18,7 @@ import { environment } from '../../../../environments/environment.development';
 })
 export class FormComponent implements OnInit {
   form!:FormGroup;
+  loading = false;
 
   constructor(
     private fb : FormBuilder,
@@ -51,6 +52,8 @@ export class FormComponent implements OnInit {
       this.form.markAllAsTouched();
       return;
     }
+
+    this.loading = true;
     
     const emailjsPublicKey = environment.EMAILJS_PUBLIC_KEY;
     const emailjsServiceId = environment.EMAILJS_SERVICE_ID;
@@ -67,11 +70,14 @@ export class FormComponent implements OnInit {
       emailjsPublicKey
     )
     .then(() => {
-      this.toastr.success('Your message has been sent successfully');
+      this.loading = false;
+      this.form.reset();
+      alert('Thank you for your message! We will get back to you soon.');
     })
     .catch((error) => {
+      this.loading = false;
       console.error('EmailJS Error:', (error as EmailJSResponseStatus).text);
-      this.toastr.error('Something went wrong, please try again');
+      alert('Oops! Something went wrong. Please try again later.');
     });
   }
 }

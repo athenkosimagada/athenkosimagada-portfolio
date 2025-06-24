@@ -5,29 +5,21 @@
       formControlName="fullName"
       placeholder="Your Full Name"
     />
-    @if (
-      form.controls["fullName"].errors &&
-      form.controls["fullName"].errors["required"] &&
-      form.controls["fullName"].touched
-    ) {
-      <span class="error">Please enter your full name</span>
+    @if ( form.controls["fullName"].errors &&
+    form.controls["fullName"].errors["required"] &&
+    form.controls["fullName"].touched ) {
+    <span class="error">Please enter your full name</span>
     }
   </div>
   <div class="contact-input">
     <input type="email" placeholder="Your Email" formControlName="email" />
-    @if (
-      form.controls["email"].errors &&
-      form.controls["email"].errors["email"] &&
-      form.controls["email"].touched
+    @if ( form.controls["email"].errors &&
+    form.controls["email"].errors["email"] && form.controls["email"].touched ) {
+    <span class="error">Please enter a valid email</span>
+    } @if ( form.controls["email"].errors &&
+    form.controls["email"].errors["required"] && form.controls["email"].touched
     ) {
-      <span class="error">Please enter a valid email</span>
-    }
-    @if (
-      form.controls["email"].errors &&
-      form.controls["email"].errors["required"] &&
-      form.controls["email"].touched
-    ) {
-      <span class="error">Please enter your email</span>
+    <span class="error">Please enter your email</span>
     }
   </div>
   <div class="contact-input">
@@ -36,13 +28,14 @@
       placeholder="Your Message"
       rows="5"
     ></textarea>
-    @if (
-      form.controls["message"].errors &&
-      form.controls["message"].errors["required"] &&
-      form.controls["message"].touched
-    ) {
-      <span class="error">Please enter your message</span>
+    @if ( form.controls["message"].errors &&
+    form.controls["message"].errors["required"] &&
+    form.controls["message"].touched ) {
+    <span class="error">Please enter your message</span>
     }
   </div>
-  <button class="btn" type="submit">Send Message</button>
+  <button class="btn" type="submit" [disabled]="loading">
+    <span *ngIf="!loading">Send Message</span>
+    <span *ngIf="loading">Sending...</span>
+  </button>
 </form>
