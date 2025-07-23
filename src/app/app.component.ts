@@ -2,7 +2,7 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from "./components/footer/footer.component";
+import { FooterComponent } from './components/footer/footer.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
 import { animate, style, transition, trigger } from '@angular/animations';
 
@@ -14,11 +14,11 @@ import { animate, style, transition, trigger } from '@angular/animations';
     RouterOutlet,
     NavigationComponent,
     FooterComponent,
-    ContactSectionComponent
-],
+    ContactSectionComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Portfolio';
+  title = 'Home: Welcome to Athenkosi Magada Website';
 }
