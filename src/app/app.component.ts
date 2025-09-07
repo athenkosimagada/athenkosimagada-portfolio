@@ -4,7 +4,9 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactSectionComponent } from './components/contact-section/contact-section.component';
-import { animate, style, transition, trigger } from '@angular/animations';
+import { inject } from '@vercel/analytics';
+
+inject();
 
 @Component({
   selector: 'app-root',
